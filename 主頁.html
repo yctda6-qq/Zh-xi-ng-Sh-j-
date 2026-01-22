@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="light" lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>竹庠坊 - Bamboo Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;family=Noto+Serif+TC:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#8b4513",
+                        "background-light": "#f4f1ea",
+                        "background-dark": "#1a1a1a",
+                    },
+                    fontFamily: {
+                        display: ["Ma Shan Zheng", "cursive"],
+                        serif: ["Noto Serif TC", "serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .writing-vertical {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        .ink-wash-bg {
+            background-image: linear-gradient(rgba(244, 241, 234, 0.4), rgba(244, 241, 234, 0.4)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuBhL5_qw9Xl48ILzjiJHvXzznwQOi-gUAUUTRrWV8Tk2VCtZfbx9QvaWTwyrUHtErMtksyEs9r5dyMuDOwvQ6s4wMru4K5iATSSpxsWnFT2Js2Ineq-AzVQdqTbonHQmOowemx5xWHxUft_pjMlWrX89-q2hjawe5Btrkp5ryek7nTsoM_M5tqiKE9O1WdxrniWqH-aswfPjlF7pvZNCPgZ3adPkiZ0PBIaF5MdFdjsmU008Z0NA1aYA-gG3aGEcr_11KhBUcgJ3ITG);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .dark .ink-wash-bg {
+            background-image: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuAPol_OfRKc3c3yqVqKg7w9CNjMbm3Kn2grl8Y4aLFio_sRtMpslu3_Leo8kcms7w8zt41P1yOS9lO7o80bv_aMxdGqgj1jemnEK1P2tef-lFTOmHixjcOdoVgfsTqnUGIWaNjykpTnwuEUD6wb0FMingJ0C6QQUx5FIIzCRdUCMFrUpHaROpAV6MXOBaKyakBaTi3Mi4buKeud5pJgHpriLmKef4YsOhaSWsS4JtqdE4MFo3nqrl4GL3epX4MnkLElyDIMw7sbSoh6);
+        }
+        .seal-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .seal-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .scroll-shape {
+            position: relative;
+            padding: 2.5rem 1.5rem;
+            border-left: 1px solid rgba(139, 69, 19, 0.2);
+            border-right: 1px solid rgba(139, 69, 19, 0.2);
+            min-height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px -10px rgba(139, 69, 19, 0.15);
+        }
+        .scroll-shape::before, .scroll-shape::after {
+            content: "";
+            position: absolute;
+            left: -12px;
+            right: -12px;
+            height: 14px;
+            background: #8b4513;
+            border-radius: 7px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+        .scroll-shape::before {
+            top: -7px;
+        }
+        .scroll-shape::after {
+            bottom: -7px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-serif text-gray-800 dark:text-gray-200 min-h-screen overflow-x-hidden selection:bg-primary/20">
+<button class="fixed top-8 right-8 z-50 p-3 rounded-full bg-white/50 dark:bg-black/30 backdrop-blur-md border border-primary/20 hover:border-primary/50 transition-all duration-300" onclick="document.documentElement.classList.toggle('dark')">
+<svg class="dark:hidden w-6 h-6 text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+<svg class="hidden dark:block w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+</button>
+<div class="ink-wash-bg min-h-screen flex flex-col items-center py-16 px-4">
+<header class="text-center flex flex-col items-center w-full max-w-4xl">
+<div class="mb-12">
+<img alt="Ink Bamboo Branch" class="w-40 opacity-70 dark:opacity-50 filter grayscale transition-all hover:opacity-100 duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI5xLcPFQrvBDaVC45YZoJB_pypbP1LrP4_YIn6iYWSbWDsJgLdyCsvpZLAwXm31uIKfNcYHURDtX_3PlO9Sk7SVJz3LztvwXL0ofiyxnHnrkP2KgcEugyG1yLs-gFkKYsqvpufU3XQAt3CliHiWfGG2w8_FHv6T7AC6XOsaNx8qF6keqU0hO0fFQSq4Ysev_8ArjdmCZMpO3ELL3H_aCAHtMOA2bY7c267nhq3_n-GUHm0MQRuirgdc9bIc0GxQGs4A3Dixg8uKEL"/>
+</div>
+<h1 class="writing-vertical text-8xl md:text-[11rem] font-display text-primary tracking-[0.4em] mb-16 cursor-default select-none transition-transform hover:scale-[1.01] duration-700 leading-none">
+                竹庠坊
+            </h1>
+<div class="max-w-md mx-auto text-lg md:text-2xl leading-loose italic opacity-80 dark:opacity-90 font-serif tracking-widest space-y-4 mb-20">
+<p>一盞清茗，半卷詩書。</p>
+<p>於竹林深處，共賞古風雅韻。</p>
+</div>
+</header>
+<nav class="grid grid-cols-2 md:grid-cols-5 gap-10 md:gap-14 mb-24 w-full max-w-7xl px-8">
+<a class="group flex flex-col items-center" href="#">
+<div class="scroll-shape bg-white/40 dark:bg-black/20 backdrop-blur-[2px] group-hover:bg-white/60 dark:group-hover:bg-black/40 transition-all duration-700 w-full max-w-[160px]">
+<span class="writing-vertical text-4xl font-display text-primary/80 group-hover:text-primary tracking-[0.5em] transition-all duration-500 group-hover:scale-105">春 · 繁花</span>
+</div>
+</a>
+<a class="group flex flex-col items-center" href="#">
+<div class="scroll-shape bg-white/40 dark:bg-black/20 backdrop-blur-[2px] group-hover:bg-white/60 dark:group-hover:bg-black/40 transition-all duration-700 w-full max-w-[160px]">
+<span class="writing-vertical text-4xl font-display text-primary/80 group-hover:text-primary tracking-[0.5em] transition-all duration-500 group-hover:scale-105">夏 · 蟬鳴</span>
+</div>
+</a>
+<a class="group flex flex-col items-center" href="#">
+<div class="scroll-shape bg-white/40 dark:bg-black/20 backdrop-blur-[2px] group-hover:bg-white/60 dark:group-hover:bg-black/40 transition-all duration-700 w-full max-w-[160px]">
+<span class="writing-vertical text-4xl font-display text-primary/80 group-hover:text-primary tracking-[0.5em] transition-all duration-500 group-hover:scale-105">秋 · 霜月</span>
+</div>
+</a>
+<a class="group flex flex-col items-center" href="#">
+<div class="scroll-shape bg-white/40 dark:bg-black/20 backdrop-blur-[2px] group-hover:bg-white/60 dark:group-hover:bg-black/40 transition-all duration-700 w-full max-w-[160px]">
+<span class="writing-vertical text-4xl font-display text-primary/80 group-hover:text-primary tracking-[0.5em] transition-all duration-500 group-hover:scale-105">冬 · 殘雪</span>
+</div>
+</a>
+<a class="group flex flex-col items-center" href="#">
+<div class="scroll-shape bg-white/40 dark:bg-black/20 backdrop-blur-[2px] group-hover:bg-white/60 dark:group-hover:bg-black/40 transition-all duration-700 w-full max-w-[160px]">
+<span class="writing-vertical text-4xl font-display text-primary/80 group-hover:text-primary tracking-[0.5em] transition-all duration-500 group-hover:scale-105">戀 · 歸燕</span>
+</div>
+</a>
+</nav>
+<footer class="w-full max-w-5xl px-4 pt-16 mt-auto">
+<div class="flex flex-wrap justify-center gap-10 md:gap-20 mb-20">
+<button class="seal-button bg-white/40 dark:bg-white/5 border border-primary/20 px-14 py-4 text-primary hover:bg-primary hover:text-white font-serif tracking-[0.6em] text-lg">
+                    詩詞串匣
+                </button>
+<button class="seal-button bg-white/40 dark:bg-white/5 border border-primary/20 px-14 py-4 text-primary hover:bg-primary hover:text-white font-serif tracking-[0.6em] text-lg">
+                    命名服務
+                </button>
+<button class="seal-button bg-white/40 dark:bg-white/5 border border-primary/20 px-14 py-4 text-primary hover:bg-primary hover:text-white font-serif tracking-[0.6em] text-lg">
+                    聯絡居士
+                </button>
+</div>
+<div class="text-center pt-12 border-t border-primary/10 opacity-50 text-sm tracking-[0.3em] font-serif pb-8">
+<p>© 二零二四 竹庠坊 · 墨香長存</p>
+</div>
+</footer>
+</div>
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none z-[-1] opacity-5 dark:opacity-20 overflow-hidden">
+<div class="absolute top-[-20%] left-[-10%] w-[70%] h-[70%] bg-black rounded-full blur-[180px] filter contrast-150"></div>
+<div class="absolute bottom-[-20%] right-[-10%] w-[80%] h-[80%] bg-black rounded-full blur-[220px] filter contrast-125"></div>
+</div>
+
+</body></html>
