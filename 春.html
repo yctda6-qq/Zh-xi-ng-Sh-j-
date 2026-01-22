@@ -1,0 +1,241 @@
+<html class="light" lang="zh-Hant"><head></head><body class="bg-background-light dark:bg-background-dark text-stone-800 dark:text-stone-200 font-body transition-colors duration-500 min-h-screen relative overflow-hidden">```html
+
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>竹庠坊 - 春季詩詞集</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&amp;family=Ma+Shan+Zheng&amp;family=Zhi+Mang+Xing&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#4a6741",
+                        "background-light": "#f4f1ea",
+                        "background-dark": "#1a1c18",
+                        "spring-mist": "#e1e9d9",
+                    },
+                    fontFamily: {
+                        display: ["Ma Shan Zheng", "serif"],
+                        body: ["Noto Serif TC", "serif"],
+                        hand: ["Zhi Mang Xing", "cursive"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                    },
+                },
+            },
+        };
+    </script>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .ink-wash-overlay {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBhwQU_udQ8yVwlWgbQ7_VmAu_8jHINh1RWNwgad5TXYLsZYf7mTTRgUfpd4l7ng-G68wWie2BS0Tv98iNyjKkt1GS1ThsFDjSF7Zt1o7Wpi7gEEhC3wEnr-BhhW3dob_WxYqeWlT6wgjPirf-4iKEWol6F22bJ79mRJwpEDlo-PK-F3dQKuByqxUMCulF38uU5FVH3zB5BwIWm83eXqvYu4VMU8NRCZJoD0uw6tJnQO6SyZblI4hXlaHDVw-DsLsMHQGnDT7iE9pr6);
+            opacity: 0.35;
+            mix-blend-mode: multiply;
+        }
+        .dark .ink-wash-overlay {
+            mix-blend-mode: overlay;
+            opacity: 0.2;
+        }
+        .spring-mist-bg {
+            background: radial-gradient(circle at 70% 30%, rgba(225, 233, 217, 0.6) 0%, transparent 70%);
+        }
+        .chinese-vertical {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        .nav-item {
+            @apply flex flex-col items-center justify-center p-2 text-stone-500 hover:text-primary transition-colors duration-300;
+        }
+        .nav-item.active {
+            @apply text-primary;
+        }
+        .nav-item.active .nav-icon {
+            @apply font-bold;
+        }
+        .willow-svg {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 400px;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .willow-svg-2 {
+            position: fixed;
+            top: 20%;
+            left: -50px;
+            width: 300px;
+            pointer-events: none;
+            z-index: 1;
+            transform: rotate(-15deg);
+            opacity: 0.4;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            width: 4px;
+        }
+        .scrollbar-hide::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .scrollbar-hide::-webkit-scrollbar-thumb {
+            background: #4a674144;
+            border-radius: 10px;
+        }
+    </style>
+
+
+<div class="fixed inset-0 spring-mist-bg pointer-events-none"></div>
+<div class="fixed inset-0 ink-wash-overlay pointer-events-none"></div>
+<div class="willow-svg opacity-40 dark:opacity-20">
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<path d="M180,0 Q160,50 140,100 Q120,150 150,200" fill="none" stroke="#4a6741" stroke-width="0.5"></path>
+<path d="M180,0 Q150,40 120,80 Q90,120 100,180" fill="none" stroke="#4a6741" stroke-width="0.3"></path>
+<ellipse cx="140" cy="100" fill="#6b8e23" rx="1" ry="3" transform="rotate(30, 140, 100)"></ellipse>
+<ellipse cx="130" cy="120" fill="#6b8e23" rx="1" ry="3" transform="rotate(45, 130, 120)"></ellipse>
+<ellipse cx="115" cy="90" fill="#6b8e23" rx="1" ry="3" transform="rotate(-15, 115, 90)"></ellipse>
+<ellipse cx="105" cy="140" fill="#6b8e23" rx="1" ry="3" transform="rotate(20, 105, 140)"></ellipse>
+</svg>
+</div>
+<div class="willow-svg-2">
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,50 Q40,45 80,60 Q120,75 160,70" fill="none" opacity="0.6" stroke="#4a6741" stroke-width="0.4"></path>
+<ellipse cx="50" cy="48" fill="#6b8e23" rx="1" ry="2.5"></ellipse>
+<ellipse cx="90" cy="62" fill="#6b8e23" rx="1" ry="2.5"></ellipse>
+</svg>
+</div>
+<nav class="fixed top-0 left-0 w-full z-50 bg-white/40 dark:bg-black/20 backdrop-blur-md border-b border-stone-200/50 dark:border-stone-800/50">
+<div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-display text-2xl text-primary">竹庠坊</span>
+</div>
+<div class="flex items-center space-x-2 md:space-x-8">
+<a class="nav-item" href="#">
+<span class="material-symbols-outlined nav-icon">home</span>
+<span class="text-[10px] mt-1 font-medium uppercase tracking-tighter">Home</span>
+</a>
+<div class="h-8 w-px bg-stone-300 dark:bg-stone-700 mx-2"></div>
+<a class="nav-item active" href="#">
+<span class="material-symbols-outlined nav-icon">spa</span>
+<span class="text-[10px] mt-1 font-medium uppercase tracking-tighter">Spring</span>
+</a>
+<a class="nav-item" href="#">
+<span class="material-symbols-outlined nav-icon">sunny</span>
+<span class="text-[10px] mt-1 font-medium uppercase tracking-tighter">Summer</span>
+</a>
+<a class="nav-item" href="#">
+<span class="material-symbols-outlined nav-icon">eco</span>
+<span class="text-[10px] mt-1 font-medium uppercase tracking-tighter">Autumn</span>
+</a>
+<a class="nav-item" href="#">
+<span class="material-symbols-outlined nav-icon">ac_unit</span>
+<span class="text-[10px] mt-1 font-medium uppercase tracking-tighter">Winter</span>
+</a>
+<a class="nav-item" href="#">
+<span class="material-symbols-outlined nav-icon">favorite</span>
+<span class="text-[10px] mt-1 font-medium uppercase tracking-tighter">Love</span>
+</a>
+</div>
+<button class="p-2 rounded-full text-stone-600 dark:text-stone-400 hover:bg-stone-200/50 dark:hover:bg-stone-800/50 transition-all" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-symbols-outlined block dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined hidden dark:block">light_mode</span>
+</button>
+</div>
+</nav>
+<main class="relative z-10 max-w-5xl mx-auto h-screen flex flex-col items-center pt-24 pb-8 px-8">
+<header class="text-center mb-8">
+<div class="inline-block relative">
+<h1 class="font-display text-6xl md:text-8xl text-primary opacity-90">春</h1>
+<div class="absolute -right-12 top-1/2 -translate-y-1/2 chinese-vertical text-stone-500 text-sm tracking-widest border-l border-stone-300 pl-2">
+                    SPRING COLLECTION
+                </div>
+</div>
+</header>
+<section class="flex-1 w-full max-w-4xl relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-background-light dark:from-background-dark to-transparent z-20"></div>
+<div class="h-full overflow-y-auto px-4 py-16 space-y-24 scrollbar-hide">
+<article class="flex flex-col md:flex-row items-center md:items-start justify-center text-center md:text-left gap-12 group">
+<div class="chinese-vertical font-display text-5xl text-primary border-r-2 border-primary/20 pr-8 group-hover:border-primary transition-colors duration-500">
+                        春江花月夜
+                    </div>
+<div class="flex-1 space-y-6">
+<div class="flex items-center gap-4 justify-center md:justify-start">
+<span class="h-px w-8 bg-stone-300"></span>
+<p class="text-stone-500 dark:text-stone-400 font-serif tracking-[0.2em]">張若虛</p>
+<span class="h-px w-8 bg-stone-300"></span>
+</div>
+<p class="text-2xl leading-loose font-hand opacity-90 tracking-wide">
+                            春江潮水連海平，海上明月共潮生。<br/>
+                            灩灩隨波千萬里，何處春江無月明！
+                        </p>
+<div class="pt-4">
+<button class="px-6 py-2 border border-primary/30 rounded-full text-sm text-primary hover:bg-primary hover:text-white transition-all duration-300 flex items-center gap-2 mx-auto md:mx-0">
+<span class="material-symbols-outlined text-base">menu_book</span> 詳閱全篇
+                            </button>
+</div>
+</div>
+</article>
+<article class="flex flex-col md:flex-row items-center md:items-start justify-center text-center md:text-left gap-12 group">
+<div class="chinese-vertical font-display text-5xl text-primary border-r-2 border-primary/20 pr-8 group-hover:border-primary transition-colors duration-500">
+                        錢塘湖春行
+                    </div>
+<div class="flex-1 space-y-6">
+<div class="flex items-center gap-4 justify-center md:justify-start">
+<span class="h-px w-8 bg-stone-300"></span>
+<p class="text-stone-500 dark:text-stone-400 font-serif tracking-[0.2em]">白居易</p>
+<span class="h-px w-8 bg-stone-300"></span>
+</div>
+<p class="text-2xl leading-loose font-hand opacity-90 tracking-wide">
+                            孤山寺北賈亭西，水面初平雲腳低。<br/>
+                            幾處早鶯爭暖樹，誰家新燕啄春泥。
+                        </p>
+<div class="pt-4">
+<button class="px-6 py-2 border border-primary/30 rounded-full text-sm text-primary hover:bg-primary hover:text-white transition-all duration-300 flex items-center gap-2 mx-auto md:mx-0">
+<span class="material-symbols-outlined text-base">menu_book</span> 詳閱全篇
+                            </button>
+</div>
+</div>
+</article>
+<article class="flex flex-col md:flex-row items-center md:items-start justify-center text-center md:text-left gap-12 group pb-12">
+<div class="chinese-vertical font-display text-5xl text-primary border-r-2 border-primary/20 pr-8 group-hover:border-primary transition-colors duration-500">
+                        春曉
+                    </div>
+<div class="flex-1 space-y-6">
+<div class="flex items-center gap-4 justify-center md:justify-start">
+<span class="h-px w-8 bg-stone-300"></span>
+<p class="text-stone-500 dark:text-stone-400 font-serif tracking-[0.2em]">孟浩然</p>
+<span class="h-px w-8 bg-stone-300"></span>
+</div>
+<p class="text-2xl leading-loose font-hand opacity-90 tracking-wide">
+                            春眠不覺曉，處處聞啼鳥。<br/>
+                            夜來風雨聲，花落知多少。
+                        </p>
+<div class="pt-4">
+<button class="px-6 py-2 border border-primary/30 rounded-full text-sm text-primary hover:bg-primary hover:text-white transition-all duration-300 flex items-center gap-2 mx-auto md:mx-0">
+<span class="material-symbols-outlined text-base">menu_book</span> 詳閱全篇
+                            </button>
+</div>
+</div>
+</article>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background-light dark:from-background-dark to-transparent z-20"></div>
+</section>
+<footer class="w-full mt-4 flex justify-between items-center text-stone-400 text-xs tracking-widest uppercase">
+<span>© 竹庠坊 Bamboo Academy</span>
+<div class="flex gap-4">
+<span class="hover:text-primary cursor-pointer transition-colors">Privacy</span>
+<span class="hover:text-primary cursor-pointer transition-colors">Terms</span>
+</div>
+</footer>
+</main>
+<div class="fixed bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-spring-mist/20 to-transparent pointer-events-none"></div>
+
+</body></html>

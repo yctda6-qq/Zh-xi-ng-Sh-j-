@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="light" lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>竹庠坊 - 戀 · 詩詞串匣</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&amp;family=Zhi+Mang+Xing&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#8B4513", 
+                        "romantic-mist": "#eef2f3",
+                        "background-light": "#f4f1ea",
+                        "background-dark": "#1a1a17",
+                    },
+                    fontFamily: {
+                        display: ["Zhi Mang Xing", "serif"],
+                        serif: ["Noto Serif TC", "serif"],
+                    },
+                },
+            },
+        };
+    </script>
+<style type="text/tailwindcss">
+        .ink-wash-love {background-image: 
+                radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.4) 0%, transparent 40%),
+                linear-gradient(rgba(244, 241, 234, 0.88), rgba(244, 241, 234, 0.92)), 
+                url(https://lh3.googleusercontent.com/aida-public/AB6AXuD1AEb6MNPG_b_Qv6Qr54imcW_GQOHpXA7gM47ds4qYy1rOsS6ToDnxnx66nCJW_0zgYXAind1lTm2NEJzsFHfYpwvRqeOVke7b4zbNYBCbB893WxiZQ38DQcvPgLyDmzKhZVh5uBkdDJk_xwT-jo2v_9n99ISp3pt1QiaHvrA2Dm9oB35pZ5RCefMugae8toL1pmZD8-cl5pgvP65ek50zwutFTU6Yw-hi8VLgGW25Fr8bjPvAp8U-BhXVCp9sfZpcH7wiXbktKDIO);
+            background-size: cover;
+            background-position: center;
+        }
+        .dark .ink-wash-love {
+            background-image: 
+                radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 30%),
+                linear-gradient(rgba(26, 26, 23, 0.92), rgba(26, 26, 23, 0.95)), 
+                url(https://lh3.googleusercontent.com/aida-public/AB6AXuDR_goxDEFUTnYqas7Q0I0u8VdaJFwzTp4db6NfG2GRrAurxkigoVqdv6QRYJaPHgZUxQEyvoWkuGUBc1VH_ZMglGUXSEjPXQgJXQ8i6cEMu4OepwfRWqGfqv91OZvbZvbs_2blY9A1hL4D0q7NdzpmKJgfDU7leRA05sznwWxaPI8KAp7U1ZCVzHDifxQoqFCtJwN_cOFt-5Kvomtc8Yhmu3XwQaBNQiTYq0U-4yyCZyCLKE0kKgMfs--fHz5yWUw1zYzfZhoGe88E);
+        }
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        .paper-texture {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDkzrLX3TK_KJ_MfK215pdf7YFRPICvV0hSKemCdMHhp4iEo5fdlc-iGK9Ws-v6zPbrGHDsIWPRHZAzvdIBghf4OFbbUDS7T36lvNLdCoNwVfOMyn7A-RRV4UFIQMzzM5K2Jw8wWSqZ8acAohSOAbOjcP0Bk6voVVnbKLQjywFnWb1je7j8vkz4K-g-DYVkt1yetV3e1OU9iFWuXn8RUDlACoGkzb2N3b-8Lp-h5f3aka89kT7g_jqTSK5tfmnpPuLhiwauQceoV7Na);
+        }
+        .mist-overlay {
+            mask-image: linear-gradient(to bottom, transparent, black, transparent);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 font-serif transition-colors duration-500 min-h-screen flex flex-col paper-texture overflow-x-hidden">
+<nav class="sticky top-0 p-6 flex justify-between items-center border-b border-stone-200 dark:border-stone-800 bg-white/30 dark:bg-black/30 backdrop-blur-md z-50">
+<div class="flex items-center space-x-4">
+<a class="flex flex-col" href="#">
+<span class="text-4xl font-display text-primary leading-none">竹庠坊</span>
+<span class="text-[10px] tracking-[0.3em] text-stone-500 uppercase ml-1">Bamboo Academy</span>
+</a>
+</div>
+<div class="flex items-center space-x-1 md:space-x-6 text-sm">
+<a class="px-3 py-1 hover:text-primary transition-colors hover:bg-stone-100/50 dark:hover:bg-stone-800/50 rounded" href="#">首頁</a>
+<div class="h-4 w-px bg-stone-300 dark:bg-stone-700 mx-1"></div>
+<a class="px-3 py-1 hover:text-primary transition-colors" href="#">春 · 萌</a>
+<a class="px-3 py-1 hover:text-primary transition-colors" href="#">夏 · 盛</a>
+<a class="px-3 py-1 hover:text-primary transition-colors" href="#">秋 · 瑟</a>
+<a class="px-3 py-1 hover:text-primary transition-colors" href="#">冬 · 藏</a>
+<a class="px-3 py-1 text-primary font-bold border-b-2 border-primary" href="#">戀 · 慕</a>
+<button class="ml-4 p-2 rounded-full hover:bg-stone-200 dark:hover:bg-stone-800 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-symbols-outlined text-xl">contrast</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow relative flex flex-col items-center justify-center p-6 md:p-12 overflow-hidden ink-wash-love">
+<div class="absolute inset-0 pointer-events-none opacity-40 dark:opacity-20 mist-overlay bg-gradient-to-r from-white/20 via-transparent to-white/20"></div>
+<div class="absolute top-20 right-[15%] opacity-30 dark:opacity-50 pointer-events-none">
+<img alt="Misty moon reflection" class="w-64 grayscale contrast-75 brightness-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1AEb6MNPG_b_Qv6Qr54imcW_GQOHpXA7gM47ds4qYy1rOsS6ToDnxnx66nCJW_0zgYXAind1lTm2NEJzsFHfYpwvRqeOVke7b4zbNYBCbB893WxiZQ38DQcvPgLyDmzKhZVh5uBkdDJk_xwT-jo2v_9n99ISp3pt1QiaHvrA2Dm9oB35pZ5RCefMugae8toL1pmZD8-cl5pgvP65ek50zwutFTU6Yw-hi8VLgGW25Fr8bjPvAp8U-BhXVCp9sfZpcH7wiXbktKDIO"/>
+</div>
+<div class="absolute bottom-20 left-10 opacity-15 dark:opacity-30 pointer-events-none">
+<img alt="Bamboo branch silhouette" class="w-64 grayscale rotate-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlZesaXTiYm8gvUlbj8o4_BmbbcB66hCtEqh4hUtwxOQhQvY5ILAdMtt6MkEKsHuEPm-NVkBBvEl8ePcQFbGOUTJE6BcKVFmRoh455nUngmxuIcM6aipLTyz_U2jIjStbYhUgDh4L-HPYj3Mm8dJLUYoCnVdgN5po-5NUqA9rVGkcOo23U6YvUjO6AqPqk8UmgBcjtvSdJRfkQmyci8gYRSFO-hQ-PccNZFZelijlEcxZsVVKMQi6RMM3WhxZyMtBRui8x_iBsnldF"/>
+</div>
+<div class="absolute bottom-16 right-16 opacity-30 flex space-x-2">
+<div class="w-14 h-14 rounded-full border border-stone-400 flex items-center justify-center italic text-xs tracking-tighter">比翼</div>
+<div class="w-14 h-14 rounded-full border border-stone-400 flex items-center justify-center italic text-xs tracking-tighter">連理</div>
+</div>
+<section class="max-w-6xl w-full flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-32 z-10">
+<div class="relative group">
+<div class="vertical-text h-[450px] md:h-[550px] flex flex-row-reverse space-x-reverse space-x-12 text-2xl md:text-4xl tracking-[0.4em] leading-loose">
+<p class="font-bold border-l border-stone-300 dark:border-stone-700 pl-6 text-stone-900 dark:text-stone-100"></p>
+<p class="pl-6 text-stone-700 dark:text-stone-300">所謂伊人，在水一方。</p>
+
+<p class="pl-6 text-stone-700 dark:text-stone-300">溯洄從之，道阻且長。</p>
+
+<p class="pl-6 text-stone-600 dark:text-stone-400">溯游從之，宛在水中央。</p>
+</div>
+<div class="absolute -bottom-12 -left-6 transform -rotate-6">
+<div class="w-14 h-14 border-2 border-red-800/60 dark:border-red-600/40 flex items-center justify-center text-red-800 dark:text-red-500 font-bold p-1 leading-none text-center text-xs opacity-70">
+                    竹庠<br/>繫情
+                </div>
+</div>
+</div>
+<div class="w-full md:w-96 flex flex-col space-y-10">
+<div class="text-center lg:text-left">
+<div class="inline-block px-3 py-1 mb-4 border border-primary/30 rounded-full text-[10px] tracking-widest text-primary uppercase">Chapter Love</div>
+<h2 class="text-6xl font-display text-primary mb-4 drop-shadow-sm">戀 · 詩詞串匣</h2>
+<p class="text-stone-500 dark:text-stone-400 italic font-serif text-sm tracking-wide">"The heart has its reasons which reason knows nothing of."</p>
+</div>
+<div class="space-y-8">
+<div class="p-8 bg-white/20 dark:bg-stone-900/40 backdrop-blur-md rounded-2xl border border-white/30 dark:border-stone-700/30 shadow-sm hover:shadow-xl transition-all duration-500 group">
+<h3 class="font-bold mb-4 flex items-center text-stone-700 dark:text-stone-200">
+<span class="material-symbols-outlined mr-2 text-primary group-hover:scale-110 transition-transform">favorite</span>
+                        本週薦讀
+                    </h3>
+<div class="space-y-3">
+<p class="text-lg leading-relaxed text-stone-800 dark:text-stone-200 font-medium">
+                            「只願君心似我心，<br/>    定不負相思意。」
+                        </p>
+<p class="text-xs text-stone-500 dark:text-stone-400 text-right mt-4">— 李之儀《卜算子》</p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<button class="w-full py-4 bg-primary text-white hover:bg-stone-800 dark:hover:bg-stone-700 transition-all flex items-center justify-center group shadow-lg shadow-primary/10">
+<span class="material-symbols-outlined mr-2 text-xl group-hover:rotate-12 transition-transform">history_edu</span>
+                        拾筆題情
+                    </button>
+<div class="flex gap-4">
+<button class="flex-1 py-3 border border-stone-300 dark:border-stone-700 bg-white/10 hover:bg-white/30 dark:hover:bg-stone-800 transition-colors flex items-center justify-center text-sm">
+<span class="material-symbols-outlined mr-2 text-sm">share</span>
+                            
+    </button>
+</footer>
+<div class="fixed inset-0 pointer-events-none opacity-20 dark:opacity-10 bg-gradient-to-t from-transparent via-white/5 to-transparent"></div>
+
+</body></html>

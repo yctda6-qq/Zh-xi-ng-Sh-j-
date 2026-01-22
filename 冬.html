@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>竹庠坊 - 冬季诗集 | Bamboo Academy</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;500;700&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1a1a1a", // Deepest ink
+              "background-light": "#fdfdfd", // Stark snow white
+              "background-dark": "#0d0d0d", // Deep charcoal
+            },
+            fontFamily: {
+              display: ["Ma Shan Zheng", "cursive"],
+              serif: ["Noto Serif SC", "serif"],
+            },
+            borderRadius: {
+              DEFAULT: "4px",
+            },
+          },
+        },
+      };
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: "Noto Serif SC", serif;
+            transition: background-color 0.5s ease;
+        }
+        .ink-wash-bg {background-image: 
+                radial-gradient(circle at 80% 20%, rgba(255,255,255,0.8) 0%, transparent 40%),
+                linear-gradient(to bottom, rgba(253, 253, 253, 0.7), rgba(253, 253, 253, 0.9)), 
+                url(https://lh3.googleusercontent.com/aida-public/AB6AXuDC7avfltGGHUU0IKJTDQUkyW72cf1v3BtESnc9VtDk8WsRd1MNfii27aN0bJ-DgkiQ6-p-mGRSleXWTkk2IdpLY7qQRlxDxpa93WOo8gU4Rg84DOhF104Zqz27o1JMVs-15lM8DDMuDM-VUk0qawM71VHsWq3_bYURyOGj4EXuEeVOsWtd5c8GfkglYlApjOmCDEhxggSjTkUDwFYgutqUtPb2DPJHUoX2HNT6k-aIWIZpzq7U2xQjmWa7iFL_32t_qmlxu2sgxX_A);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .dark .ink-wash-bg {
+            background-image: 
+                linear-gradient(to bottom, rgba(13, 13, 13, 0.85), rgba(13, 13, 13, 0.98)), 
+                url(https://lh3.googleusercontent.com/aida-public/AB6AXuDXJN668aMVX5rd55visgk8Ax2Ey5viYcvWsjeYvE40HwxfrRvvSQjD0cZXyMa2RZJeYod4slI7DBGrXaAORGooaVSrVWOCdVkMVyM4v8ZNWEJNTo8pzPPJsdNcXZZljZzjHhMvDY-UxMjcvsqXcXBqEUGBiO6C7xGVcCNtFjMCzpR4VPKtnNVWBUMmXWmnPJS3CHPXIdnY4ATcW3PgqvuLnPZs9DBi9iZgTO0pc3KJ6wdCCfTI1bxwDrNkO6txy-8ooVWm0kNrHfg6);
+        }
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .poetry-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+        .dark .poetry-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-primary dark:text-gray-100 min-h-screen ink-wash-bg selection:bg-primary selection:text-white">
+<header class="fixed top-0 left-0 right-0 z-50 px-8 py-6 flex justify-between items-center border-b border-black/5 dark:border-white/5 backdrop-blur-md">
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined cursor-pointer hover:opacity-50 transition-opacity" onclick="document.documentElement.classList.toggle('dark')">contrast</span>
+<div class="h-6 w-px bg-black/10 dark:bg-white/10"></div>
+<nav class="flex space-x-6 text-xs tracking-[0.3em] font-light">
+<a class="hover:text-gray-400 transition-colors" href="#">首页</a>
+<a class="hover:text-gray-400 transition-colors" href="#">春日</a>
+<a class="hover:text-gray-400 transition-colors" href="#">夏鸣</a>
+<a class="hover:text-gray-400 transition-colors" href="#">秋实</a>
+<a class="font-bold border-b border-black dark:border-white" href="#">冬寂</a>
+<a class="hover:text-gray-400 transition-colors" href="#">情愫</a>
+</nav>
+</div>
+<div class="text-center absolute left-1/2 -translate-x-1/2">
+<h1 class="font-display text-3xl tracking-tighter">竹庠坊</h1>
+<p class="text-[9px] tracking-[0.6em] mt-0.5 opacity-40">BAMBOO ACADEMY</p>
+</div>
+<div class="flex items-center space-x-6">
+<button class="text-[10px] tracking-widest border border-black/20 dark:border-white/20 px-4 py-1.5 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all">
+            诗选
+        </button>
+<span class="material-symbols-outlined cursor-pointer font-light">menu</span>
+</div>
+</header>
+<main class="pt-40 pb-32 px-6 md:px-20 max-w-7xl mx-auto">
+<div class="flex flex-col items-center mb-32 relative">
+<div class="absolute -top-16 opacity-[0.03] dark:opacity-[0.05] pointer-events-none select-none">
+<span class="font-display text-[24rem]">冬</span>
+</div>
+<h2 class="font-display text-7xl mb-6 relative z-10 tracking-widest">冬季诗集</h2>
+<div class="w-16 h-[1px] bg-black dark:bg-white/40 mb-8"></div>
+<p class="max-w-md text-center text-sm leading-relaxed font-light tracking-widest opacity-60">
+            “千山鸟飞绝，万径人踪灭。”<br/>
+            万物于寒冬归于寂静，笔墨在素雪中留存余温。
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+<div class="poetry-card group p-10 transition-all duration-1000 hover:shadow-2xl hover:shadow-black/5 dark:hover:shadow-white/5">
+<div class="flex justify-between items-start mb-10">
+<div class="vertical-text text-3xl font-display tracking-[0.2em] group-hover:translate-x-[-4px] transition-transform duration-700">
+                    江雪
+                </div>
+<div class="text-[9px] tracking-[0.5em] opacity-30 uppercase vertical-text font-light">
+                    Solitary Fisherman
+                </div>
+</div>
+<div class="space-y-6 text-xl leading-relaxed font-light tracking-widest text-black dark:text-white">
+<p>千山鸟飞绝，</p>
+<p>万径人踪灭。</p>
+<p>孤舟蓑笠翁，</p>
+<p>独钓寒江雪。</p>
+</div>
+<div class="mt-16 flex items-center space-x-3 opacity-30 text-[10px] tracking-[0.3em]">
+<span>柳宗元</span>
+<span class="w-6 h-[1px] bg-current"></span>
+<span>唐</span>
+</div>
+</div>
+<div class="poetry-card group p-10 transition-all duration-1000 hover:shadow-2xl hover:shadow-black/5 dark:hover:shadow-white/5 border-l-4 border-black/5">
+<div class="flex justify-between items-start mb-10">
+<div class="vertical-text text-3xl font-display tracking-[0.2em] group-hover:translate-x-[-4px] transition-transform duration-700">
+                    梅花
+                </div>
+<div class="text-[9px] tracking-[0.5em] opacity-30 uppercase vertical-text font-light">
+                    Plum Blossoms
+                </div>
+</div>
+<div class="space-y-6 text-xl leading-relaxed font-light tracking-widest text-black dark:text-white">
+<p>墙角数枝梅，</p>
+<p>凌寒独自开。</p>
+<p>遥知不是雪，</p>
+<p>为有暗香来。</p>
+</div>
+<div class="mt-16 flex items-center space-x-3 opacity-30 text-[10px] tracking-[0.3em]">
+<span>王安石</span>
+<span class="w-6 h-[1px] bg-current"></span>
+<span>宋</span>
+</div>
+</div>
+<div class="poetry-card group p-10 transition-all duration-1000 hover:shadow-2xl hover:shadow-black/5 dark:hover:shadow-white/5">
+<div class="flex justify-between items-start mb-10">
+<div class="vertical-text text-3xl font-display tracking-[0.2em] group-hover:translate-x-[-4px] transition-transform duration-700">
+                    问刘十九
+                </div>
+<div class="text-[9px] tracking-[0.5em] opacity-30 uppercase vertical-text font-light">
+                    Winter Night
+                </div>
+</div>
+<div class="space-y-6 text-xl leading-relaxed font-light tracking-widest text-black dark:text-white">
+<p>绿蚁新醅酒，</p>
+<p>红泥小火炉。</p>
+<p>晚来天欲雪，</p>
+<p>能饮一杯无？</p>
+</div>
+<div class="mt-16 flex items-center space-x-3 opacity-30 text-[10px] tracking-[0.3em]">
+<span>白居易</span>
+<span class="w-6 h-[1px] bg-current"></span>
+<span>唐</span>
+</div>
+</div>
+<div class="poetry-card group p-10 transition-all duration-1000 hover:shadow-2xl hover:shadow-black/5 dark:hover:shadow-white/5">
+<div class="flex justify-between items-start mb-10">
+<div class="vertical-text text-3xl font-display tracking-[0.2em] group-hover:translate-x-[-4px] transition-transform duration-700">
+                    夜雪
+                </div>
+<div class="text-[9px] tracking-[0.5em] opacity-30 uppercase vertical-text font-light">
+                    Heavy Snow
+                </div>
+</div>
+<div class="space-y-6 text-xl leading-relaxed font-light tracking-widest text-black dark:text-white">
+<p>已讶衾枕冷，</p>
+<p>复见窗户明。</p>
+<p>夜深知雪重，</p>
+<p>时闻折竹声。</p>
+</div>
+<div class="mt-16 flex items-center space-x-3 opacity-30 text-[10px] tracking-[0.3em]">
+<span>白居易</span>
+<span class="w-6 h-[1px] bg-current"></span>
+<span>唐</span>
+</div>
+</div>
+<div class="poetry-card group p-10 transition-all duration-1000 border-dashed border-black/10 dark:border-white/10">
+<div class="absolute top-0 right-0">
+<span class="text-[8px] tracking-widest bg-black text-white px-3 py-1 dark:bg-white dark:text-black">现代</span>
+</div>
+<div class="flex justify-between items-start mb-10">
+<div class="vertical-text text-3xl font-display tracking-[0.2em] group-hover:translate-x-[-4px] transition-transform duration-700">
+                    雪后
+                </div>
+<div class="text-[9px] tracking-[0.5em] opacity-30 uppercase vertical-text font-light">
+                    Modern Verse
+                </div>
+</div>
+<div class="space-y-6 text-xl leading-relaxed font-light tracking-widest text-black dark:text-white">
+<p>落木萧萧下，</p>
+<p>寒山负雪行。</p>
+<p>此心寄明月，</p>
+<p>万里共清霜。</p>
+</div>
+<div class="mt-16 flex items-center space-x-3 opacity-30 text-[10px] tracking-[0.3em]">
+<span>青岩居士</span>
+<span class="w-6 h-[1px] bg-current"></span>
+<span>今</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center p-10 group cursor-pointer border border-dashed border-black/10 dark:border-white/10 hover:bg-black/5 dark:hover:bg-white/5 transition-all">
+<span class="material-symbols-outlined text-5xl mb-6 font-thin opacity-20 group-hover:scale-110 transition-transform">edit_square</span>
+<h3 class="font-display text-2xl mb-3 tracking-widest">提笔入冬</h3>
+<p class="text-[10px] opacity-40 text-center px-6 tracking-widest leading-loose">
+                在这片苍茫的留白里，<br/>留下属于您的冬日墨迹。
+            </p>
+</div>
+</div>
+<div class="mt-40 flex justify-between items-center border-t border-black/5 dark:border-white/5 pt-16">
+<a class="group flex items-center space-x-6 opacity-30 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined text-xl">arrow_back_ios</span>
+<div class="text-right">
+<p class="text-[9px] tracking-[0.4em] uppercase mb-1 font-light">Previous</p>
+<p class="font-display text-xl tracking-widest">情愫篇</p>
+</div>
+</a>
+<div class="hidden md:flex space-x-3 opacity-10">
+<div class="w-1.5 h-1.5 rotate-45 border border-black dark:border-white"></div>
+<div class="w-1.5 h-1.5 rotate-45 border border-black dark:border-white"></div>
+<div class="w-1.5 h-1.5 rotate-45 border border-black dark:border-white"></div>
+</div>
+<a class="group flex items-center space-x-6 opacity-30 hover:opacity-100 transition-opacity" href="#">
+<div class="text-left">
+<p class="text-[9px] tracking-[0.4em] uppercase mb-1 font-light">Next</p>
+<p class="font-display text-xl tracking-widest">春日篇</p>
+</div>
+<span class="material-symbols-outlined text-xl">arrow_forward_ios</span>
+</a>
+</div>
+</main>
+<aside class="fixed top-1/2 -translate-y-1/2 left-8 hidden lg:block pointer-events-none">
+<div class="vertical-text text-[10px] tracking-[1.5em] opacity-20 font-light">
+        岁寒，然后知松柏之后凋也。
+    </div>
+</aside>
+<footer class="py-16 px-12 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 opacity-30 text-[9px] tracking-[0.5em] border-t border-black/5 dark:border-white/5 uppercase">
+<div>© 2024 Bamboo Academy / Ink on Snow</div>
+<div class="flex space-x-12">
+<a class="hover:underline transition-all" href="#">Names</a>
+<a class="hover:underline transition-all" href="#">Contact</a>
+<a class="hover:underline transition-all" href="#">Archive</a>
+</div>
+<div class="font-display text-base tracking-normal normal-case">宁静致远</div>
+</footer>
+<div class="fixed bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-black/10 dark:via-white/10 to-transparent"></div>
+
+</body></html>

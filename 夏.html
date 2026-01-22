@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>竹庠坊 - 夏日诗集</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700;900&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8B4513",
+              "background-light": "#f4f1ea",
+              "background-dark": "#1a1814",
+              "ink-black": "#2c2c2c",
+              "parchment": "#fdfaf2",
+              "seal-red": "#b32b2b",
+              "lotus-pink": "#e8a7b0"
+            },
+            fontFamily: {
+              display: ["Ma Shan Zheng", "cursive"],
+              serif: ["Noto Serif SC", "serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+            },
+          },
+        },
+      };
+    </script>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .ink-wash-overlay {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBzxwBfpptITizc1VToQfxePDTCdTJPsgBkDKiNS5eiU13I3j5ieNFNeezfiYvqtOS5z3bSRt2zAA9_sVK7gvFFBzwEq-eM-GET6c7LiiO1XZfjU_7PAt5IuM7j_ayvurY-5BEO0FivWRh02XpXGpNVWy3RLb6qeyP7pZMzLZv5Yx1R--dvVhXbaA7XKSHLmS6ir5YzQH5AHrGiTBhbVqKzOPhfQpQPqgfD3Tx-vH4wW-GfCTCLiWlZYhQv1CuU93SQoxvWsBtDsxGD);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.12;
+            mix-blend-mode: multiply;
+        }
+        .writing-vertical {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        .parchment-texture {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuB7TYQAjbvad2NUCMLQNQwTiEjgS3x30G473N_mVLdCDKcMrpGAKQIDluEcSThjhzX70QJIloUu13uHw8C47OuiuDkZhOR5dCbi54Z8xsV1EcA2yCTqFQMmgBz8S8-sEHdRHOQQfbaS771-TItXmBDIsjOb7l0pS9R0g3xZZQ10E3IwEDnV7RuEBOfqwJIPWBYt7OyvcIEryr7ZLWDs4aM4ZYH858r6NVdfUaZe1G9s_4Yyp55qeOVojE5ZP20lHVsSYnI0WDWWGAFh);
+        }
+        .border-traditional {
+            border: 1px solid #d1c7b7;
+            position: relative;
+        }
+        .border-traditional::before {
+            content: "";
+            position: absolute;
+            inset: 4px;
+            border: 1px solid #d1c7b7;
+            pointer-events: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .poem-card-bg {
+            background: linear-gradient(to bottom, #dbe4d8 0%, #f4f1ea 30%, #f4f1ea 70%, #dbe4d8 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .poem-card-bg::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(45deg, rgba(44, 73, 63, 0.1) 0%, transparent 50%, rgba(44, 73, 63, 0.1) 100%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-serif text-ink-black dark:text-gray-300 transition-colors duration-500 overflow-x-hidden">
+<div class="fixed inset-0 pointer-events-none z-0">
+<img alt="Summer River at Sunset ink wash painting" class="w-full h-full object-cover opacity-40 dark:opacity-15 grayscale-[10%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCka58HkIFc71IjJyGw-h8N44FDKyAVxYFw4MLUrmp3exZ27lX2oY035mVIakM6pH7vrd9V2ShV3afEuqz2Sfph1cBvdQI9Zz_NpClyO4sgHhrAltQozhfCdVPGYgWXFmCXt7lxRbOVo3C5R5BsXRjWXu0dC_qfScTmvBAotk4Dm4xoxhL2u2bOG-2j1JSpe5Kdvb0WX8YHsw0zJhVzfDMZxQMfIbCfhR1fN2-TGeNrub_m2Jh9CAC5gzTcu6X9-x2VESYdlFEITUg8"/>
+<div class="absolute inset-0 ink-wash-overlay dark:opacity-5"></div>
+<div class="absolute top-10 right-20 w-64 h-64 rounded-full bg-orange-400 opacity-10 blur-3xl"></div>
+</div>
+<main class="relative z-10 min-h-screen flex flex-col items-center p-8 lg:p-12">
+<header class="text-center mb-10">
+<h1 class="font-display text-7xl md:text-8xl mb-4 text-primary dark:text-orange-200">竹庠坊</h1>
+<div class="flex items-center justify-center space-x-6">
+<span class="h-px w-16 bg-primary/20"></span>
+<p class="text-xl tracking-[0.6em] uppercase font-light text-stone-600 dark:text-stone-400">Summer Poetry Collection</p>
+<span class="h-px w-16 bg-primary/20"></span>
+</div>
+</header>
+<nav class="flex flex-wrap justify-center gap-x-12 gap-y-4 mb-12 text-lg font-medium">
+<a class="hover:text-primary transition-colors opacity-60 hover:opacity-100" href="#">首页</a>
+<a class="hover:text-primary transition-colors opacity-60 hover:opacity-100" href="#">春</a>
+<a class="text-primary border-b-2 border-primary pb-1 px-2 font-bold" href="#">夏</a>
+<a class="hover:text-primary transition-colors opacity-60 hover:opacity-100" href="#">秋</a>
+<a class="hover:text-primary transition-colors opacity-60 hover:opacity-100" href="#">冬</a>
+<a class="hover:text-primary transition-colors opacity-60 hover:opacity-100" href="#">情</a>
+</nav>
+<div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-start justify-items-center lg:justify-items-stretch">
+<div class="lg:col-span-12 flex flex-col lg:flex-row gap-12 justify-center w-full">
+<article class="w-full lg:w-[400px] flex-shrink-0 poem-card-bg dark:bg-stone-900/95 px-12 py-16 border-traditional shadow-xl min-h-[750px] flex flex-col items-center justify-between group hover:-translate-y-2 transition-transform duration-500">
+<div class="writing-vertical h-full flex flex-col items-start space-y-8 py-4">
+<h2 class="text-4xl font-bold mb-16 text-ink-black dark:text-stone-100 tracking-[0.4em]">《夏江晚照》</h2>
+<div class="text-2xl leading-loose tracking-[0.6em] flex space-x-12 font-medium">
+<div class="flex flex-col gap-4">
+<p>長江日落火雲平，</p>
+<p>水面金鱗動暑明。</p>
+</div>
+<div class="flex flex-col gap-4">
+<p>萬里風來消暑氣，</p>
+<p>人間何處不蟬聲。</p>
+</div>
+</div>
+</div>
+<div class="mt-12 flex flex-col items-center">
+<p class="writing-vertical text-sm font-medium opacity-50 mb-8 tracking-widest">诗人 · 張若虛 (擬)</p>
+<button class="group flex flex-col items-center">
+<span class="px-3 py-6 border-2 border-seal-red text-seal-red font-display flex items-center justify-center text-xl transition-all duration-300 group-hover:bg-seal-red group-hover:text-white transform group-hover:scale-105 writing-vertical">【詳閱全篇】</span>
+</button>
+</div>
+</article>
+<article class="w-full lg:w-[400px] flex-shrink-0 poem-card-bg dark:bg-stone-900/95 px-12 py-16 border-traditional shadow-xl min-h-[750px] flex flex-col items-center justify-between group hover:-translate-y-2 transition-transform duration-500">
+<div class="writing-vertical h-full flex flex-col items-start space-y-8 py-4">
+<h2 class="text-4xl font-bold mb-16 text-ink-black dark:text-stone-100 tracking-[0.4em]">《西湖夏行》</h2>
+<div class="text-2xl leading-loose tracking-[0.6em] flex space-x-12 font-medium">
+<div class="flex flex-col gap-4">
+<p>綠蔭深處水光浮，</p>
+<p>小艇輕搖過柳洲。</p>
+</div>
+<div class="flex flex-col gap-4">
+<p>最是荷香人未覺，</p>
+<p>一湖風月入心頭。</p>
+</div>
+</div>
+</div>
+<div class="mt-12 flex flex-col items-center">
+<p class="writing-vertical text-sm font-medium opacity-50 mb-8 tracking-widest">诗人 · 白居易 (擬)</p>
+<button class="group flex flex-col items-center">
+<span class="block w-12 h-12 border-2 border-seal-red text-seal-red font-display flex items-center justify-center text-2xl transition-all duration-300 group-hover:bg-seal-red group-hover:text-white transform group-hover:scale-110">阅</span>
+<span class="text-[10px] mt-2 text-seal-red/70 font-sans tracking-tighter uppercase font-bold">Full View</span>
+</button>
+</div>
+</article>
+</div>
+</div>
+<footer class="mt-16 mb-8 flex flex-wrap justify-center gap-6">
+<button class="px-12 py-4 bg-stone-100/80 dark:bg-stone-800/80 border border-stone-300 dark:border-stone-700 hover:bg-primary hover:text-white transition-all duration-300 rounded shadow-sm text-sm tracking-[0.3em] font-medium">
+            诗词串匣
+        </button>
+<button class="px-12 py-4 bg-stone-100/80 dark:bg-stone-800/80 border border-stone-300 dark:border-stone-700 hover:bg-primary hover:text-white transition-all duration-300 rounded shadow-sm text-sm tracking-[0.3em] font-medium">
+            命名服务
+        </button>
+<button class="px-12 py-4 bg-stone-100/80 dark:bg-stone-800/80 border border-stone-300 dark:border-stone-700 hover:bg-primary hover:text-white transition-all duration-300 rounded shadow-sm text-sm tracking-[0.3em] font-medium">
+            联络居士
+        </button>
+</footer>
+<button class="fixed bottom-10 right-10 w-16 h-16 bg-seal-red text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 hover:rotate-12 transition-all z-50">
+<span class="material-symbols-outlined text-3xl">edit_note</span>
+</button>
+<button class="fixed top-8 right-8 p-3 rounded-full bg-stone-200/50 dark:bg-stone-800/50 backdrop-blur-md text-stone-600 dark:text-stone-300 z-50 shadow-md border border-white/20" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-symbols-outlined dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined hidden dark:block">light_mode</span>
+</button>
+</main>
+
+</body></html>

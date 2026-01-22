@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="light" lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>竹庠坊 - 秋季詩集 | Bamboo Academy</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#8B4513",
+                        autumn: {
+                            gold: "#D4AF37",
+                            leaf: "#B22222",
+                            paper: "#FDF5E6",
+                            mountain: "#4A4036"
+                        },
+                        "background-light": "#F7F3E9",
+                        "background-dark": "#1C1917",
+                    },
+                    fontFamily: {
+                        display: ["Ma Shan Zheng", "cursive"],
+                        serif: ["Noto Serif TC", "serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                    },
+                },
+            },
+        };
+    </script>
+<style type="text/tailwindcss">
+        .ink-wash-bg {
+            background-image: linear-gradient(to bottom, rgba(247, 243, 233, 0.95), rgba(247, 243, 233, 0.8)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAy9hLlUwj3n-nwK32ng_0uGodplUj_d7gdb_L7zPgdgAVN9etXIfoPd68viO3Ii8vKjEza8CVjncLqnhtyk0IgXohL18_Zm6wqFstXsg2O92e9MlmWrbLJGi82n5b6DHjJwPrONY6C4-7kDAwJac_AdLZG-WOlrmBFNsoAmibNI3CoD521BltngVyAPA1RCTw4RZaFB7Kth5ZkUqjNTLSsbmdJtc-nYQSAlIbZRVYCOOqxNYPUdIeC4Dg64JzxJCAYZW-dnHjNSM_R');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .dark .ink-wash-bg {
+            background-image: linear-gradient(to bottom, rgba(28, 25, 23, 0.95), rgba(28, 25, 23, 0.85)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAy9hLlUwj3n-nwK32ng_0uGodplUj_d7gdb_L7zPgdgAVN9etXIfoPd68viO3Ii8vKjEza8CVjncLqnhtyk0IgXohL18_Zm6wqFstXsg2O92e9MlmWrbLJGi82n5b6DHjJwPrONY6C4-7kDAwJac_AdLZG-WOlrmBFNsoAmibNI3CoD521BltngVyAPA1RCTw4RZaFB7Kth5ZkUqjNTLSsbmdJtc-nYQSAlIbZRVYCOOqxNYPUdIeC4Dg64JzxJCAYZW-dnHjNSM_R');
+        }
+        .writing-vertical {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        .classical-border {
+            border: 1px solid #C5A059;
+            position: relative;
+            padding: 2rem;
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1);
+        }
+        .classical-border::before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            right: 4px;
+            bottom: 4px;
+            border: 0.5px solid rgba(197, 160, 89, 0.3);
+            pointer-events: none;
+        }
+        .nav-link {
+            @apply flex flex-col items-center px-4 py-2 transition-all duration-300 opacity-60 hover:opacity-100;
+        }
+        .nav-link.active {
+            @apply opacity-100 text-autumn-gold;
+        }
+        .footer-bg {
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAy9hLlUwj3n-nwK32ng_0uGodplUj_d7gdb_L7zPgdgAVN9etXIfoPd68viO3Ii8vKjEza8CVjncLqnhtyk0IgXohL18_Zm6wqFstXsg2O92e9MlmWrbLJGi82n5b6DHjJwPrONY6C4-7kDAwJac_AdLZG-WOlrmBFNsoAmibNI3CoD521BltngVyAPA1RCTw4RZaFB7Kth5ZkUqjNTLSsbmdJtc-nYQSAlIbZRVYCOOqxNYPUdIeC4Dg64JzxJCAYZW-dnHjNSM_R');
+            background-size: cover;
+            background-position: bottom center;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-serif transition-colors duration-500 min-h-screen overflow-x-hidden ink-wash-bg">
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+<div class="absolute top-20 left-1/4 text-autumn-leaf opacity-10 transform rotate-45 select-none"><span class="material-symbols-outlined text-4xl">eco</span></div>
+<div class="absolute top-1/2 right-1/4 text-autumn-gold opacity-15 transform -rotate-12 select-none"><span class="material-symbols-outlined text-5xl">eco</span></div>
+<div class="absolute bottom-1/3 left-10 text-autumn-leaf opacity-5 transform rotate-90 select-none"><span class="material-symbols-outlined text-6xl">eco</span></div>
+</div>
+<header class="relative z-20 mx-auto max-w-7xl pt-8 px-8">
+<div class="flex flex-col md:flex-row justify-between items-center pb-6">
+<div class="flex flex-col items-center md:items-start mb-6 md:mb-0">
+<span class="text-4xl font-display text-primary tracking-widest">竹庠坊</span>
+<span class="text-[8px] tracking-[0.4em] uppercase text-primary/40 mt-1">Bamboo Academy</span>
+</div>
+<nav class="flex flex-wrap justify-center gap-2 md:gap-4">
+<a class="nav-link text-primary" href="#">
+<span class="material-symbols-outlined text-xl">home</span>
+<span class="text-[10px] mt-1 tracking-tighter">首頁</span>
+</a>
+<a class="nav-link text-primary" href="#">
+<span class="material-symbols-outlined text-xl">potted_plant</span>
+<span class="text-[10px] mt-1 tracking-tighter">春</span>
+</a>
+<a class="nav-link text-primary" href="#">
+<span class="material-symbols-outlined text-xl">wb_sunny</span>
+<span class="text-[10px] mt-1 tracking-tighter">夏</span>
+</a>
+<a class="nav-link active" href="#">
+<span class="material-symbols-outlined text-xl">filter_hdr</span>
+<span class="text-[10px] mt-1 tracking-tighter">秋</span>
+</a>
+<a class="nav-link text-primary" href="#">
+<span class="material-symbols-outlined text-xl">ac_unit</span>
+<span class="text-[10px] mt-1 tracking-tighter">冬</span>
+</a>
+<a class="nav-link text-primary" href="#">
+<span class="material-symbols-outlined text-xl">favorite</span>
+<span class="text-[10px] mt-1 tracking-tighter">情</span>
+</a>
+</nav>
+<div class="flex items-center space-x-6 mt-6 md:mt-0">
+<button class="p-2 text-primary/60 hover:text-primary transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-symbols-outlined">contrast</span>
+</button>
+
+</div>
+</div>
+</header>
+<main class="relative z-10 max-w-7xl mx-auto px-6 py-12">
+<div class="text-center mb-32 relative">
+<h1 class="text-[84px] font-display text-primary mb-8 tracking-[0.4em] relative inline-block">
+            秋
+            <span class="absolute top-4 -right-12 text-autumn-gold opacity-30"><span class="material-symbols-outlined text-5xl">flare</span></span>
+</h1>
+<div class="flex items-center justify-center space-x-8">
+<span class="h-px w-16 bg-primary/20"></span>
+<p class="text-primary/60 text-base tracking-[0.8em]">· 秋季選集·</p>
+<span class="h-px w-16 bg-primary/20"></span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+<div class="bg-white/40 dark:bg-stone-900/40 classical-border group hover:-translate-y-1 transition-all duration-700">
+<div class="absolute top-6 right-6 writing-vertical text-[9px] tracking-[0.3em] text-primary/30">七言絕句 · 懷古</div>
+<h3 class="text-2xl font-display text-primary mb-16 text-center">楓橋夜泊</h3>
+<div class="writing-vertical h-72 mx-auto flex flex-col items-center space-y-8 text-lg leading-loose text-stone-700 dark:text-stone-300">
+<p>月落烏啼霜滿天，</p>
+<p>江楓漁火對愁眠。</p>
+<p>姑蘇城外寒山寺，</p>
+<p>夜半鐘聲到客船。</p>
+</div>
+<div class="mt-16 pt-6 flex justify-between items-center text-[10px] text-primary/40 italic">
+<span class="tracking-widest">唐 · 張繼</span>
+<div class="flex space-x-4">
+<button class="hover:text-autumn-gold"><span class="material-symbols-outlined text-sm">favorite</span></button>
+<button class="hover:text-autumn-gold"><span class="material-symbols-outlined text-sm">share</span></button>
+</div>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-sm shadow-xl classical-border border-transparent p-0">
+<img alt="Autumn Mountains Ink Painting" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy9hLlUwj3n-nwK32ng_0uGodplUj_d7gdb_L7zPgdgAVN9etXIfoPd68viO3Ii8vKjEza8CVjncLqnhtyk0IgXohL18_Zm6wqFstXsg2O92e9MlmWrbLJGi82n5b6DHjJwPrONY6C4-7kDAwJac_AdLZG-WOlrmBFNsoAmibNI3CoD521BltngVyAPA1RCTw4RZaFB7Kth5ZkUqjNTLSsbmdJtc-nYQSAlIbZRVYCOOqxNYPUdIeC4Dg64JzxJCAYZW-dnHjNSM_R"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent flex flex-col justify-end p-8 text-white">
+<span class="text-autumn-gold text-[9px] tracking-[0.4em] mb-2 uppercase opacity-80">Autumn Selection</span>
+<h3 class="text-4xl font-display mb-4">山居秋暝</h3>
+<p class="text-[11px] opacity-70 mb-6 leading-relaxed italic border-l border-autumn-gold/50 pl-4">
+                    空山新雨後，天氣晚來秋。<br/>
+                    明月松間照，清泉石上流。
+                </p>
+<div class="flex items-center space-x-3">
+<span class="text-[9px] tracking-[0.3em] opacity-50">王維 · 唐代</span>
+</div>
+</div>
+</div>
+<div class="bg-white/40 dark:bg-stone-900/40 classical-border group hover:-translate-y-1 transition-all duration-700">
+<div class="absolute top-6 right-6 writing-vertical text-[9px] tracking-[0.3em] text-primary/30">宋詞 · 鷓鴣天</div>
+<h3 class="text-2xl font-display text-primary mb-16 text-center">秋思</h3>
+<div class="writing-vertical h-72 mx-auto flex flex-col items-center space-y-6 text-lg leading-loose text-stone-700 dark:text-stone-300">
+<p>碧雲天，黃葉地，</p>
+<p>秋色連波，波上寒煙翠。</p>
+<p>山映斜陽天接水，</p>
+<p>芳草無情，更在斜陽外。</p>
+</div>
+<div class="mt-16 pt-6 flex justify-between items-center text-[10px] text-primary/40 italic">
+<span class="tracking-widest">宋 · 范仲淹</span>
+<div class="flex space-x-4">
+<button class="hover:text-autumn-gold"><span class="material-symbols-outlined text-sm">favorite</span></button>
+<button class="hover:text-autumn-gold"><span class="material-symbols-outlined text-sm">share</span></button>
+</div>
+</div>
+</div>
+<div class="bg-white/40 dark:bg-stone-900/40 classical-border group hover:-translate-y-1 transition-all duration-700">
+<div class="absolute top-6 right-6 writing-vertical text-[9px] tracking-[0.3em] text-primary/30">七言律詩</div>
+<h3 class="text-2xl font-display text-primary mb-16 text-center">登高</h3>
+<div class="writing-vertical h-72 mx-auto flex flex-col items-center space-y-10 text-lg leading-loose text-stone-700 dark:text-stone-300">
+<p>風急天高猿嘯哀，</p>
+<p>渚清沙白鳥飛迴。</p>
+<p>無邊落木蕭蕭下，</p>
+<p>不盡長江滾滾來。</p>
+</div>
+<div class="mt-16 pt-6 flex justify-between items-center text-[10px] text-primary/40 italic">
+<span class="tracking-widest">唐 · 杜甫</span>
+<div class="flex space-x-4">
+<button class="hover:text-autumn-gold"><span class="material-symbols-outlined text-sm">favorite</span></button>
+<button class="hover:text-autumn-gold"><span class="material-symbols-outlined text-sm">share</span></button>
+</div>
+</div>
+</div>
+<div class="bg-autumn-gold/5 dark:bg-white/5 classical-border border-dashed border-autumn-gold/20 flex flex-col justify-center items-center text-center p-12 space-y-8">
+<span class="material-symbols-outlined text-4xl text-autumn-gold opacity-40">edit_note</span>
+<div class="space-y-3">
+<p class="text-primary font-display text-2xl">寒蟬鳴處，誰寄錦書？</p>
+<p class="text-primary/40 text-[10px] tracking-[0.3em] uppercase">Share your autumn thoughts</p>
+</div>
+<button class="text-[11px] border border-primary/30 text-primary/60 px-8 py-2.5 hover:bg-primary hover:text-white transition-all tracking-[0.4em]">
+                投稿詩作
+            </button>
+</div>
+<div class="bg-white/40 dark:bg-stone-900/40 classical-border group hover:-translate-y-1 transition-all duration-700">
+<div class="absolute top-6 right-6 writing-vertical text-[9px] tracking-[0.3em] text-primary/30">詞 · 水調歌頭</div>
+<h3 class="text-2xl font-display text-primary mb-16 text-center">中秋</h3>
+<div class="writing-vertical h-72 mx-auto flex flex-col items-center space-y-4 text-lg leading-relaxed text-stone-700 dark:text-stone-300">
+<p>明月幾時有？把酒問青天。</p>
+<p>不知天上宮闕，今夕是何年。</p>
+<p>我欲乘風歸去，又恐瓊樓玉宇，</p>
+<p>高處不勝寒。</p>
+</div>
+<div class="mt-16 pt-6 flex justify-between items-center text-[10px] text-primary/40 italic">
+<span class="tracking-widest">宋 · 蘇軾</span>
+<div class="flex space-x-4">
+<button class="hover:text-autumn-gold"><span class="material-symbols-outlined text-sm">favorite</span></button>
+<button class="hover:text-autumn-gold"><span class="material-symbols-outlined text-sm">share</span></button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-20 flex flex-col items-center text-center space-y-12 pb-16">
+<div class="flex items-center space-x-12">
+<span class="h-px w-20 bg-autumn-gold/20"></span>
+<span class="text-primary/30 italic text-[11px] tracking-[0.6em]">閱罷秋色 · 自有歸期</span>
+<span class="h-px w-20 bg-autumn-gold/20"></span>
+</div>
+</div>
+</main>
+<footer class="relative z-20 overflow-hidden pt-24 pb-12 footer-bg">
+<div class="absolute inset-0 bg-background-light/90 dark:bg-background-dark/95 backdrop-blur-sm -z-10"></div>
+<div class="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-4 gap-16 text-sm text-primary/60">
+<div class="space-y-6">
+<h4 class="font-display 
+</button>
+</div>
+<p class="text-[9px] opacity-40">每月奉上精選詩集，不擾清幽。</p>
+</div>
+</div>
+<div class="text-center mt-32 text-[9px] opacity-30 tracking-[0.4em] uppercase border-t border-primary/5 pt-8">
+        © 2024 竹庠坊 BAMBOO ACADEMY. TRADITIONAL INK AESTHETICS.
+    </div>
+</footer>
+
+</body></html>
